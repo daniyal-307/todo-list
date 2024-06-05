@@ -1,6 +1,6 @@
 {
   "name": "todolist_proj03",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A ToDo Application made using Typescript, Node.js and Inquirer",
   "main": "index.js",
   "type": "module",

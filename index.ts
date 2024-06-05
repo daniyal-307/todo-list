@@ -72,9 +72,7 @@ async function viewTodo() {
         console.log("")
     } else {
         console.clear()
-        console.log("")
-        console.log("Sorry, No Tasks in ToDo")
-        console.log("")
+        console.log("\nSorry, No Tasks in ToDo\n")
     }
 
     // const { startAgain } = await inquirer.prompt([
@@ -100,9 +98,7 @@ async function addTodo() {
 
     myToDos.push(addTask)
     console.clear()
-    console.log("")
-    console.log(`Task: ${addTask}, added to your list`)
-    console.log("")
+    console.log(`\nTask: ${addTask}, added to your list\n`)
 
     // const { startAgain } = await inquirer.prompt([
     //     {
@@ -132,16 +128,12 @@ async function deleteTodo() {
 
             myToDos.splice(myToDos.indexOf(removeTodo), 1)
             console.clear()
-            console.log("")
-            console.log(`Task: ${removeTodo}, deleted from the list`)
-            console.log("")
+            console.log(`\nTask: ${removeTodo}, deleted from the list\n`)
             break;
         }
     } else {
         console.clear()
-        console.log("")
-        console.log("Sorry, No Tasks in ToDo")
-        console.log("")
+        console.log("\nSorry, No Tasks in ToDo\n")
     }
 
     // const { startAgain } = await inquirer.prompt([
@@ -175,16 +167,12 @@ async function updateTodo() {
             ])
 
             myToDos.splice(myToDos.indexOf(updateTodo), 1, todoUpdated)
-            console.log("")
-            console.log(`Task, ${updateTodo} updated to: ${todoUpdated}`)
-            console.log("")
+            console.log(`\nTask, ${updateTodo} updated to: ${todoUpdated}\n`)
             break;
         }
     } else {
         console.clear()
-        console.log("")
-        console.log("Sorry, No Tasks in ToDo")
-        console.log("")
+        console.log("\nSorry, No Tasks in ToDo\n")
     }
 
     // const { startAgain } = await inquirer.prompt([
